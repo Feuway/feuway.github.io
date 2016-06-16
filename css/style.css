@@ -1,3 +1,14 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: lightblue;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-size: 14px;
+	font-family: Verdana;
+}
+
 .wrap {
 	width: 960px;
 	margin: 0 auto;
@@ -10,26 +21,47 @@ header li {
 	list-style: none;
 	text-decoration: none;
 }
-.portfolio {
+section {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
+	margin-top: 50px;
+	padding: 30px;
+	background: rgba(255, 255, 255, .8);
+	border-radius: 10px;
 }
 
-.portfolio__title {
+.title {
 	flex-basis: 100%;
+	margin-bottom: 50px;
+	font-family: Verdana;
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
 }
 
 .portfolio__site {
-	width: 200px;
+	position: relative;
+	width: 250px;
 	height: 300px;
+	margin-right: 50px;
 	margin-bottom: 40px;
 	background: #444444;
+	color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+	overflow: hidden;
 }
 
 .portfolio__site:hover {
 	transform: scale(1.3);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+	transition: all linear .3s;
+}
+
+.portfolio__photo {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .portfolio__site--barbershop {
@@ -42,4 +74,70 @@ header li {
 	background: url("../img/sedona.jpg") no-repeat 50% 0%;
 	-webkit-background-size: 100%;
 	background-size: 170%;
+}
+
+.portfolio__decription {
+	position: absolute;
+	bottom: -90%;
+	left: -110%;
+	/*display: flex;
+	flex-flow: column wrap;
+	justify-content: center;*/
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background: rgba(135, 200, 255, .8);
+	box-sizing: border-box;
+}
+
+.portfolio__decription:hover {
+	bottom: 0%;
+	text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	transition: height linear .3s;
+}
+
+.portfolio__decription small {
+	font-size: 10px;
+	color: #000000;
+}
+
+.portfolio__decription:hover small {
+	display: none;
+}
+
+.portfolio__site:hover .portfolio__decription {
+	left: 0%;
+	transition: all linear .3s;
+}
+
+.used {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-basis: 40%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.used li {
+	margin: 5px;
+	padding: 5px;
+	background: #777777;
+	color: #ffffff;
+	box-shadow: 0 0 10px 5px #ffffff;
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.portfolio__decription a {
+	display: block;
+	margin-top: 50px;
+	color: #000000;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 }

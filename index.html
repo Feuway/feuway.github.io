@@ -7,28 +7,60 @@
 	</head>
 	<body>
 		<header>
-			<ul>
-				<li><a href="#about-me">Обо мне</a></li>
-				<li><a href="#portfolio"></a>Портфолио</li>
-				<li><a href="#contact"></a>Как связаться</li>
-				<li><a href="#"></a></li>
-			</ul>
+			<div class="wrap">
+				<ul>
+					<li><a href="#about-me">Обо мне</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Как связаться</a></li>
+				</ul>
+			</div>
 		</header>
 		<main>
 			<div class="wrap">
 				<section class="about-me" id="about-me">
-					<h2>Обо мне</h2>
-					<img src="" alt="">
-					<p>Меня зовут Денис</p>
+					<h2 class="title">Обо мне</h2>
+					<img class="about-me__photo" src="" alt="main-photo">
+					<p class="about-me__text" >Привет, меня зовут Денис. Я занимаюсь версткой.</p>
+
 				</section>
 				<section class="portfolio" id="portfolio">
 					<h2 class="portfolio__title  title">Мое портфолио</h2>
-					<a class="portfolio__site  portfolio__site--barbershop" href="portfolio/barbershop/index.html"></a>
-					<a class="portfolio__site  portfolio__site--sedona" href="portfolio/sedona/index.html"></a>
-					<a class="portfolio__site  portfolio__site--mishka" href="portfolio/mishka/index.html"></a>
-					<a class="portfolio__site" href=""></a>
-					<a class="portfolio__site" href=""></a>
-					<a class="portfolio__site" href=""></a>
+					<article class="portfolio__site  portfolio__site--barbershop">
+						<a class="portfolio__photo" href="portfolio/barbershop/index.html"></a>
+						<div class="portfolio__decription">
+							<small>Наведите здесь, чтобы увеличить</small>
+							<h2>Барбершоп</h2>
+							<p>Учебный макет. 4 страницы.</p>
+							<ul class="used">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+								<li>PixelPerfect</li>
+								<li>Progressive Enhancement</li>
+							</ul>
+							<a href="portfolio/barbershop/index.html">Перейти</a>
+						</div>
+					</article>
+					<article class="portfolio__site  portfolio__site--sedona">
+						<a class="portfolio__photo" href="portfolio/sedona/index.html"></a>
+						<div class="portfolio__decription">
+							<small>Наведите здесь, чтобы увеличить</small>
+							<h2>Седона</h2>
+							<p>Учебный макет. 2 страницы.</p>
+							<ul class="used">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+								<li>PixelPerfect</li>
+								<li>Progressive Enhancement</li>
+							</ul>
+							<a href="portfolio/sedona/index.html">Перейти</a>
+						</div>
+					</article>
+				</section>
+				<section class="contacts" id="contacts">
+					<h1 class="title">Как связаться</h1>
+					<p></p>
 				</section>
 			</div>
 		</main>
