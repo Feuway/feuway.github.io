@@ -5,3 +5,24 @@ header li {
 	list-style: none;
 	text-decoration: none;
 }
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.portfolio__title {
+	flex-basis: 100%;
+}
+
+.portfolio__site {
+	width: 200px;
+	height: 300px;
+	margin-bottom: 40px;
+	background: #444444;
+}
+
+.portfolio__site--barbershop {
+
+}
