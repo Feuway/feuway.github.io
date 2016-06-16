@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Седона - Главная</title>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="layout-center">
+			<header class="main-header">
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+						<li>
+							<a class="logo-menu" href="index.html">
+								<img src="img/logo-header.png" width="138" height="70" alt="logo">
+							</a>
+						</li>
+						<li><a href="#">Карта штата</a></li>
+						<li><a href="сatalog.html">Гостиницы</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="content">
+				<section class="main-foto">
+					<div class="foto-title">
+						<p>Welcome - to the gorgeous</p>
+						<h1>Sedona</h1>
+						<p>Because the Grand Canyon sucks</p>
+					</div>
+				</section>
+				<div class="content-description">
+					<h2 >Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
+				<div class="features features-big clearfix">
+					<div class="features-description">
+						<h2 class="features-title">Настоящий городок</h2>
+						<div class="features-number">
+							<span>№1</span>
+						</div>
+						<p class="features-text">Седона - не атракцион для туристов, там течет своя жизнь</p>
+					</div>
+					<div class="features-foto"></div>
+				</div>
+				<div class="features-details clearfix">
+					<div class="features-details-housing">
+						<h2 class="features-title">Жилье</h2>
+						<p class="features-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</div>
+					<div class="features-details-food">
+						<h2 class="features-title">Еда</h2>
+						<p class="features-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+					</div>
+					<div class="features-details-souvenirs">
+						<h2 class="features-title">Сувениры</h2>
+						<p class="features-text">Не только китайского, но и местного производства!</p>
+					</div>
+				</div>
+				<div class="features features-big clearfix">
+					<div class="features-foto"></div>
+					<div class="features-description">
+						<h2 class="features-title">Там есть мост дьявола</h2>
+						<div class="features-number">
+							<span>№2</span>
+						</div>
+						<p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+				</div>
+				<div class="features clearfix">
+					<div class="features-description">
+						<h2 class="features-title">Небольшая площадь</h2>
+						<div class="features-number">
+							<span>№3</span>
+						</div>
+						<p class="features-text">Все достопримечательности находятся очень близко</p>
+					</div>
+					<div class="features-description">
+						<h2 class="features-title">Красивая дорога</h2>
+						<div class="features-number">
+							<span>№4</span>
+						</div>
+						<p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+					<div class="features-description">
+						<h2 class="features-title">Мало туристов</h2>
+						<div class="features-number">
+							<span>№5</span>
+						</div>
+						<p class="features-text">Большинство едет в грандканьон и толпится там</p>
+					</div>
+				</div>
+				<section class="interest">
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				</section>
+				<section class="search">
+					<h2><a href="form.html">Поиск гостиницы в Седоне</a></h2>
+					<form class="search-hotel clearfix" action="echo" method="post" name="search-hotel">
+						<fieldset class="date clearfix">
+							<label  for="date-arrival">Дата заезда:</label>
+							<input type="text" name="date-arrival" id="date-arrival" placeholder="24 апреля 2016">
+							<span class="icon-calendar"></span>
+						</fieldset>
+						<fieldset class="date clearfix">
+							<label for="check-out">Дата выезда:</label>
+							<input type="text" name="check-out" id="check-out" placeholder="4 июля 2016">
+							<span class="icon-calendar"></span>
+						</fieldset>
+						<fieldset class="number-people">
+							<fieldset class="adults">
+								<label for="adults">Взрослые:</label>
+								<button class="icon-minus" type="button"></button>
+								<input type="text" name="adults" id="adults" placeholder="2">
+								<button class="icon-plus" type="button"></button>
+							</fieldset>
+							<fieldset class="children">
+								<label for="children">Дети:</label>
+								<button class="icon-minus" type="button"></button>
+								<input type="text" name="children" id="children" placeholder="0">
+								<button class="icon-plus" type="button"></button>
+							</fieldset>
+						</fieldset>
+						<input type="submit" name="btn-search" value="Найти">
+					</form>
+				</section>
+				<section class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497691.6285781361!2d-112.1230201647705!3d34.96696452911028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1463311577580" width="1200" height="593" style="border:0" allowfullscreen></iframe>
+				</section>
+			</main>
+			<footer class="main-footer clearfix">
+				<section class="footer-hashtag">
+					<a href="#">#visitsedona</a>
+				</section>
+				<section class="footer-social">
+					<a href="#" class="social-btn icon-twitter"></a>
+					<a href="#" class="social-btn icon-facebook"></a>
+					<a href="#" class="social-btn icon-youtube"></a>
+				</section>
+				<section class="footer-copyright">
+					<p>Website by</p>
+					<a class="logo-copyright" href="https://htmlacademy.ru"></a>
+				</section>
+			</footer>
+		</div>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
