@@ -1,0 +1,42 @@
+.main-header {
+  background: #ffffff;
+  border-top: 1px solid #ececec;
+
+  @media($w-tablet) {
+    border-top: none;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.main-header__wrap {
+  position: relative;
+  display: flex;
+  flex-flow: wrap column;
+
+  @media($w-tablet) {
+    flex-flow: wrap row;
+    position: relative;
+    @include container;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: #ffffff url("../../img/icon-menu-close.svg") no-repeat;
+  font-size: 0;
+  cursor: pointer;
+  &--closed {
+    background: #ffffff url("../../img/icon-menu-open.svg") no-repeat;
+  }
+
+  @media($w-tablet) {
+    display: none;
+  }
+}
+@media($w-desktop) {
+}

@@ -1,0 +1,14 @@
+.footer-logo {
+  display: none;
+}
+
+@media($w-tablet) {
+  .footer-logo {
+    display: block;
+    width: 108px;
+    height: 36px;
+  }
+}
+
+@media($w-desktop) {
+}

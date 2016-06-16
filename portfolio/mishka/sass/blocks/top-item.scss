@@ -1,0 +1,6 @@
+.top-item {
+  border-bottom: 1px solid #000000;
+}
+.top-item__wrap {
+  @include container;
+}

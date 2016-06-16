@@ -1,0 +1,12 @@
+.page-title {
+  display: block;
+  margin: 0;
+  padding: 70px 0;
+  background: #f1f1f1;
+  @include title;
+  text-align: center;
+
+  @media($w-tablet) {
+    padding: 95px 0 85px;
+  }
+}

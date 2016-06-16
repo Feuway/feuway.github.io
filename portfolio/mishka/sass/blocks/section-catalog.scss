@@ -1,0 +1,19 @@
+.section-catalog {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  &--interior {
+    background: #63d1bb;
+  }
+  &--toys {
+    background: #56c3b2;
+  }
+
+  min-height: 103px;
+}
+
+@media($w-tablet) {
+  .section-catalog {
+    width: 50%;
+  }
+}

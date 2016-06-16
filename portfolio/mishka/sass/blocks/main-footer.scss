@@ -1,0 +1,14 @@
+.main-footer {
+  background: #f1f1f1;
+  text-align: center;
+}
+.main-footer__wrap {
+  @include container;
+}
+
+@media($w-tablet) {
+  .main-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}

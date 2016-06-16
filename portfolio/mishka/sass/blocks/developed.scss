@@ -1,0 +1,12 @@
+.developed p {
+  display: inline-block;
+  color: $color-title;
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(18px);
+  @include line-height(18px, 18px);
+}
+.developed__logo {
+  display: inline-block;
+}
+

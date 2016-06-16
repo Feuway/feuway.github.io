@@ -1,0 +1,125 @@
+.catalog-item {
+  margin-bottom: 30px;
+
+  @media($w-tablet) {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  @media($w-desktop) {
+    display: block;
+    width: 315px;
+  }
+}
+
+.catalog-item__photo {
+  width: 260px;
+  height: 195px;
+
+  @media($w-tablet) {
+    width: 334px;
+    height: 333px;
+  }
+
+  @media($w-desktop) {
+    float: none;
+    width: 315px;
+    height: 462px;
+  }
+}
+.catalog-item__info {
+  display: flex;
+  flex-flow: wrap;
+  padding: 30px 27px;
+  border: 1px solid #ececec;
+
+  @media($w-tablet) {
+    float: right;
+    width: 278px;
+  }
+
+  @media($w-desktop) {
+    float: none;
+    width: auto;
+  }
+}
+.catalog-item__title {
+  margin: 0;
+}
+.catalog-item__description {
+  margin-bottom: 25px;
+  @media($w-tablet) {
+    height: 222px;
+    margin: 0;
+  }
+  @media($w-desktop) {
+    height: 88px;
+  }
+}
+.catalog-item__characteristics {
+  margin: 0;
+  color: $color-text;
+  font-family: $font-opensans;
+  @include font-size-rem(14px);
+  @include line-height(14px, 30px);
+
+  @media($w-tablet) {
+    @include font-size-rem(15px);
+    @include line-height(15px, 30px);
+  }
+}
+.catalog-item__buy {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  height: 20px;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
+}
+.catalog-item__price {
+  color: $color-title;
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(14px);
+  @include line-height(14px, 24px);
+
+  @media($w-tablet) {
+    @include font-size-rem(16px);
+    @include line-height(16px, 24px);
+  }
+}
+.catalog-item__to-cart {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: transparent url("../../img/icon-cart.svg") no-repeat center;
+}
+.catalog-item__photo a {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @media($w-tablet) {
+    width: 334px;
+    height: 333px;
+  }
+
+  @media($w-desktop) {
+    width: 315px;
+    height: 462px;
+  }
+}
+
+.catalog-item__title a {
+  color: $color-title;
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
+  text-decoration: none;
+
+  @media($w-tablet) {
+    @include font-size-rem(18px);
+    @include line-height(18px, 24px);
+  }
+}

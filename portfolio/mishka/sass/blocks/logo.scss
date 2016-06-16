@@ -1,0 +1,15 @@
+.logo {
+  align-self: center;
+  width: 90px;
+  height: 35px;
+  margin: 22px 0 20px;
+
+  @media($w-tablet) {
+    width: 116px;
+    height: 46px;
+    margin-left: 0;
+  }
+
+  @media($w-desktop) {
+  }
+}
