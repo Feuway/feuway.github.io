@@ -6,9 +6,9 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
+		<header class="main-header">
 			<div class="wrap">
-				<ul>
+				<ul class="main-header__nav">
 					<li><a href="#about-me">Обо мне</a></li>
 					<li><a href="#portfolio">Портфолио</a></li>
 					<li><a href="#contacts">Как связаться</a></li>
@@ -17,13 +17,16 @@
 		</header>
 		<main>
 			<div class="wrap">
-				<section class="about-me" id="about-me">
+				<section class="block  about-me" id="about-me">
 					<h2 class="title">Обо мне</h2>
-					<img class="about-me__photo" src="" alt="main-photo">
-					<p class="about-me__text" >Привет, меня зовут Денис. Я занимаюсь версткой.</p>
-
+					<img class="about-me__photo" src="img/main-photo.jpg" alt="main-photo">
+					<div class="about-me__description">
+						<p class="about-me__text" >Привет, меня зовут Денис, мне 22 года. Я начинающий верстальщик сайтов. Успешко окончил базовый интенсив <a href="https://htmlacademy.ru/intensive/htmlcss">HTML-Academy.</a> Знаю основные способы вёрстки, их возможности, сильные и слабые стороны. Понимаю особенности работы браузеров. Умею верстать кроссбраззерно, валидно, семантично, адаптивно.</p>
+						<h2>Мои навыки:</h2>
+						<p>HTML, CSS, JavaScript, jQuery, HTML5, CSS3, Adobe, Photoshop, Git, БЭМ, Sass</p>
+					</div>
 				</section>
-				<section class="portfolio" id="portfolio">
+				<section class="block  portfolio" id="portfolio">
 					<h2 class="portfolio__title  title">Мое портфолио</h2>
 					<article class="portfolio__site  portfolio__site--barbershop">
 						<a class="portfolio__photo" href="portfolio/barbershop/index.html"></a>
@@ -54,16 +57,28 @@
 								<li>PixelPerfect</li>
 								<li>Progressive Enhancement</li>
 							</ul>
-							<a href="portfolio/sedona/index.html">Перейти</a>
+							<a href="portfolio/sedona/index.html">Перейти</a>	
 						</div>
 					</article>
 				</section>
-				<section class="contacts" id="contacts">
-					<h1 class="title">Как связаться</h1>
-					<p></p>
-				</section>
 			</div>
 		</main>
-		<footer class="contact" id="contact"></footer>
+		<div class="wrap">
+			<footer class="block  contacts" id="contacts">
+					<h1 class="title">Как связаться</h1>
+						<div class="contacts__info">
+							<span>Электронная почта:</span>
+							<span>feuway@gmail.com</span>
+						</div>
+						<div class="contacts__info">
+							<span>Номер телефона:</span>
+							<span>+7-963-246-24-78</span>
+						</div>
+						<!-- <div class="contacts__info">
+							<span>GitHub</span>
+							<a href="https://github.com/Feuway">https://github.com/Feuway</a>
+						</div> -->
+			</footer>
+			</div>
 	</body>
 </html>
