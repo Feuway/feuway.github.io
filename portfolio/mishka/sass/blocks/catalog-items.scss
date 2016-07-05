@@ -1,12 +1,15 @@
 .catalog-items {
   margin-top: 30px;
+  margin-bottom: 58px;
 
   @media($w-tablet) {
-    margin-bottom: 79px;
+    margin-top: 81px;
+    margin-bottom: 63px;
   }
 
   @media($w-desktop) {
-    margin-bottom: 128px;
+    margin-top: 130px;
+    margin-bottom: 105px;
   }
 }
 
@@ -14,8 +17,4 @@
   display: flex;
   flex-wrap: wrap;
   @include container;
-
-  @media($w-desktop) {
-    justify-content: space-between;
-  }
 }

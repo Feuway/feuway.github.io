@@ -97,12 +97,6 @@ body {
 	transition: all linear .3s;
 }
 
-.portfolio__photo {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
 .portfolio__site--barbershop {
 	background: url("../img/barbershop.jpg") no-repeat 50% 0%;
 	-webkit-background-size: 100%;
@@ -113,6 +107,18 @@ body {
 	background: url("../img/sedona.jpg") no-repeat 50% 0%;
 	-webkit-background-size: 100%;
 	background-size: 170%;
+}
+
+.portfolio__site--mishka {
+	background: url("../img/mishka.jpg") no-repeat 50% 0%;
+	-webkit-background-size: 100%;
+	background-size: 170%;
+}
+
+.portfolio__photo {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .portfolio__decription {

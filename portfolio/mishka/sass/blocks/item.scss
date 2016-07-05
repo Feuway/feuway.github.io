@@ -10,14 +10,15 @@
   }
 }
 .item__title {
-  margin-top: 28px;
-  margin-bottom: 14px;
+  margin: 25px 0 9px;
+  word-spacing: -1px;
   @include title;
 
   @media($w-tablet) {
     float: left;
-    margin-top: 42px;
-    margin-bottom: 54px;
+    margin-top: 46px;
+    margin-bottom: 51px;
+    margin-left: -5px;
   }
 
   @media($w-desktop) {
@@ -25,12 +26,14 @@
     z-index: 10;
     float: none;
     display: inline-block;
-    margin-top: 127px;
+    margin-top: 124px;
+    margin-bottom: 48px;
+    vertical-align: top;
   }
 }
 .item__week {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   color: #63d1bb;
   font-family: $font-opensans;
   font-weight: bold;
@@ -40,31 +43,32 @@
 
   @media($w-tablet) {
     float: right;
-    width: 100px;
-    margin-top: 55px;
+    width: 124px;
+    margin-top: 57px;
     text-align: center;
   }
 
   @media($w-desktop) {
     float: left;
+    width: 104px;
     margin: 140px 42px 0 30px;
   }
 }
 .item__description {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 15px;
   font-family: $font-opensans;
   @include font-size-rem(14px);
   @include line-height(14px, 24px);
 
   @media($w-tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     @include font-size-rem(16px);
     @include line-height(16px, 30px);
   }
 
   @media($w-desktop) {
-    margin-bottom: 64px;
+    margin-bottom: 50px;
   }
 }
 .item__features {
@@ -76,21 +80,29 @@
 
   td {
     padding: 10px 0;
-    border-bottom: 1px solid #818181;
+    border-bottom: 1px solid #ececec;
+
+    @media($w-tablet) {
+      padding: 9px 0;
+    }
   }
 
   td:last-child {
     width: 193px;
-    padding-left: 30px;
+    padding-left: 32px;
+
+    @media($w-tablet) {
+      padding-left: 26px;
+    }
   }
 
   @media($w-tablet) {
-    margin-bottom: 58px;
+    margin-bottom: 56px;
     @include font-size-rem(15px);
   }
 
   @media($w-desktop) {
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 }
 .item__photo {
@@ -99,7 +111,7 @@
 
   @media($w-tablet) {
     position: absolute;
-    top: 150px;
+    top: 152px;
     right: 0;
     width: 333px;
     height: 404px;
@@ -107,7 +119,7 @@
 
   @media($w-desktop) {
     position: absolute;
-    top: 80px;
+    top: 71px;
     right: 0;
     width: 525px;
     height: 636px;
@@ -129,12 +141,11 @@
 }
 .item__price {
   display: block;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin: 25px 0;
   font-family: $font-verdana;
   font-weight: bold;
-  @include font-size-rem(14px);
-  @include line-height(14px, 24px);
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
   text-align: center;
 
   @media($w-tablet) {
@@ -143,26 +154,26 @@
   }
 }
 .item__btn {
-  margin-bottom: 41px;
+  margin-bottom: 35px;
 
   @media($w-tablet) {
-    margin-bottom: 69px;
+    margin-bottom: 52px;
   }
 
   @media($w-desktop) {
-    margin-bottom: 96px;
+    margin-bottom: 73px;
   }
 }
 
 @media($w-tablet) {
-  .item_info {
+  .item__info {
     width: 292px;
     clear: both;
   }
 }
 
 @media($w-desktop) {
-  .item_info {
+  .item__info {
     margin-left: 176px;
   }
 }

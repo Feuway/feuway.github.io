@@ -1,11 +1,15 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
+  src:
+    url("../fonts/opensans.woff2"),
+    url("../fonts/opensans.woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+  src:
+    url("../fonts/opensansbold.woff2"),
+    url("../fonts/opensansbold.woff");
   font-weight: 700;
 }

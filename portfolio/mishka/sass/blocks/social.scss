@@ -1,14 +1,39 @@
 .social {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 141px;
+  @include no-list;
+  margin-top: 25px;
+  margin-bottom: 29px;
+
+  @media($w-tablet) {
+    margin-top: 28px;
+    margin-left: 71px;
+  }
 }
 .social__btn {
-  display: inline-block;
-  font-size: 0;
-  vertical-align: top;
-  &--inst {
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
   }
+
+  &:hover svg {
+    fill: $color-add;
+  }
+
+  &:active svg {
+    fill: $color-add;
+    opacity: .3;
+  }
+
   &--fb {
-  }
-  &--tw {
+    width: 26px;
+    height: 27px;
   }
 }

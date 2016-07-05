@@ -1,15 +1,27 @@
 .logo {
   align-self: center;
-  width: 90px;
+  width: 86px;
   height: 35px;
   margin: 22px 0 20px;
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 
   @media($w-tablet) {
-    width: 116px;
+    width: 113px;
     height: 46px;
     margin-left: 0;
   }
 
   @media($w-desktop) {
+    margin: 9px 0 7px;
+    width: 149px;
+    height: 72px;
   }
 }

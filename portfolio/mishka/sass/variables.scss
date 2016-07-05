@@ -1,5 +1,7 @@
 $color-title: #000000;
 $color-text: #444444;
+$color-main: #62d1ba;
+$color-add: #46c1ae;
 
 $font-sans-serif: Arial, sans-serif;
 $font-verdana: Verdana, $font-sans-serif;
@@ -13,4 +15,4 @@ $bg-footer: #f1f1f1;
 $w-mobile: 260px;
 $w-tablet: "min-width: 768px";
 $w-desktop: "min-width: 1100px";
-
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);

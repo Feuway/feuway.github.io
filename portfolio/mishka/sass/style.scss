@@ -1,3 +1,4 @@
+@import "../node_modules/normalize-scss/sass/_normalize.scss";
 @import "fonts";
 @import "variables";
 @import "mixins";
@@ -9,7 +10,7 @@
 @import "blocks/main-header";
 @import "blocks/main-nav";
 
-@import "blocks/main-decription";
+@import "blocks/main-description";
 @import "blocks/section-catalog";
 
 @import "blocks/top-item";

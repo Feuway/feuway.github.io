@@ -3,19 +3,33 @@
   font-family: $font-verdana;
   @include font-size-rem(14px);
   @include line-height(14px, 30px);
+  letter-spacing: -0.5px;
 
   @media($w-tablet) {
     @include font-size-rem(16px);
+    @include line-height(16px, 30px);
   }
 
   @media($w-desktop) {
     flex-basis: 700px;
   }
 }
+.review__comment {
+  margin: 0;
+  padding: 0;
+
+}
 .review__author {
   width: 260px;
+  margin-top: 15px;
+
+
+  @media($w-tablet) {
+    margin-top: 7px;
+  }
 }
 .review__author-name {
+  color: #000000;
   font-weight: bold;
   line-height: normal;
   font-style: normal;
