@@ -82,13 +82,17 @@ body {
 	position: relative;
 	width: 250px;
 	height: 300px;
-	margin-right: 50px;
+	margin-right: 75px;
 	margin-bottom: 40px;
 	background: #444444;
 	color: #ffffff;
 	border-radius: 10px;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
 	overflow: hidden;
+}
+
+.portfolio__site:nth-of-type(3n) {
+	margin-right: 0;
 }
 
 .portfolio__site:hover {
