@@ -20,7 +20,6 @@ body, .onepage-wrapper, html {
   display: block;
   position: relative;
   padding: 0;
-  -webkit-transform-style: preserve-3d;
 }
 
 .onepage-wrapper .section {
@@ -66,30 +65,4 @@ body, .onepage-wrapper, html {
   border: 1px solid black;
   margin-top: -4px;
   left: 8px;
-}
-
-.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
-  overflow: auto;
-}
-
-.disabled-onepage-scroll .onepage-wrapper .section {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-}
-.disabled-onepage-scroll .onepage-wrapper {
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  transform: none !important;
-  -ms-transform: none !important;
-  min-height: 100%;
-}
-
-
-.disabled-onepage-scroll .onepage-pagination {
-  display: none;
-}
-
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
-  position: inherit;
 }

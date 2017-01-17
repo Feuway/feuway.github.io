@@ -119,6 +119,12 @@ body {
 	background-size: 170%;
 }
 
+.portfolio__site--jwood {
+	background: url("../img/jwood.jpg") no-repeat 50% 0%;
+	-webkit-background-size: 100%;
+	background-size: 170%;
+}
+
 .portfolio__photo {
 	display: block;
 	width: 100%;

@@ -1,27 +1,12 @@
 @font-face {
   font-family: 'Nexa';
-  src: url("../fonts/Nexa Bold.otf");
+  src: url('../fonts/Nexa Bold.otf');
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Nexa';
-  src: url("../fonts/Nexa Light.otf");
+  src: url('../fonts/Nexa Light.otf');
   font-weight: normal;
-}
-
-@keyframes arrows {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(4px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
 $grey: #e5e5e5;
@@ -33,10 +18,9 @@ body {
   text-transform: uppercase;
 }
 
-
 header {
   position: fixed;
-  z-index: 9999;
+  z-index: 10;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -50,20 +34,19 @@ header {
 
   &:hover {
     border-color: #666666;
-    transition: border .2s ease-out;
   }
 
   &__list {
     display: flex;
-    width: 500px;
     justify-content: space-between;
+    width: 500px;
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 35px;
     }
 
     &-item {
@@ -82,18 +65,16 @@ header {
 .wrap {
   position: relative;
   display: flex;
-  margin: 0 100px;
+  margin: 0 150px;
   width: 1100px;
 }
 
 .section-1 {
   display: flex;
   justify-content: center;
-  background: url("../img/Фон.jpg");
-  background-size: cover;
+  background: url('../img/Фон.jpg');
   width: 100%;
   height: 100vh;
-
 }
 
 .logo {
@@ -105,8 +86,8 @@ header {
 
   &__img {
     position: relative;
-    width: 310px;
-    height: 310px;
+    width: 350px;
+    height: 350px;
 
     &:before {
       content: 'tm';
@@ -123,14 +104,14 @@ header {
   &__photograph {
     display: flex;
 
-    &-desc {
+    &-desk {
       margin: 0;
-      margin-top: 30px;
+      margin-top: 25px;
       padding: 0;
       font-size: 60px;
       color: $grey;
       font-weight: normal;
-      
+
       &--bold {
         font-weight: bold;
       }
@@ -140,7 +121,7 @@ header {
 
 .scroll {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,14 +130,14 @@ header {
   &__text {
     margin: 0;
     color: $grey;
+    opacity: 0.5;
     font-size: 18px;
   }
-  
+
   &__arrows {
     width: 35px;
     height: 35px;
     background: url('../img/Arrows.png');
-    animation: arrows 3s infinite;
   }
 }
 
@@ -169,40 +150,37 @@ header {
 
 .photo {
   align-self: center;
-  width: 500px;
+  width: 470px;
   height: 430px;
   background: url('../img/Jason Wood.jpg');
+  -webkit-background-size: cover;
   background-size: cover;
 }
 
 .about-me {
   align-self: center;
   width: 500px;
-  margin-left: 50px;
+  margin-left: 60px;
 
   &__title {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     padding: 0;
     font-size: 48px;
-    font-weight: normal;
-    text-transform: uppercase;
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0;
     font-size: 14px;
-    line-height: 36px;
-    text-transform: none;
+    line-height: 24px;
   }
 
   &__signature {
-    width: 140px;
-    height: 24px;
-    background: url("../img/sign.png") no-repeat;
-
+    width: 165px;
+    height: 35px;
+    background: url('../img/sign.png') no-repeat;
   }
 }
 
@@ -211,7 +189,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("../img/birch.jpg");
+  background: url('../img/birch.jpg');
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -225,10 +203,9 @@ header {
 
   &__title {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     padding: 0;
     font-size: 48px;
-    font-weight: normal;
     color: $grey;
   }
 
@@ -237,19 +214,13 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 425px;
-  }
+    height: 450px;
 
-
-  &__gallery-photo {
-    width: 200px;
-    height: 200px;
-
-    @for $i from 1 through 10 {
-      &--#{$i} {
-        background: url("../img/#{$i}.jpg") no-repeat;
-        background-size: cover;
-      }
+    &-photo {
+      display: block;
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
     }
   }
 }
@@ -270,14 +241,14 @@ header {
 
   &__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     padding: 0;
     font-size: 24px;
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     padding: 0;
     font-size: 48px;
     font-weight: normal;
@@ -286,12 +257,11 @@ header {
   &__social {
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    width: 240px;
   }
 }
 
 .icon {
-
   width: 58px;
   height: 58px;
 
@@ -308,7 +278,58 @@ header {
   }
 }
 
+.overlay-gallery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8); }
+.overlay-gallery_close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  padding: 0 10px;
+  color: #e5e5e5;
+  font-size: 45px;
+  text-align: center;
+  cursor: pointer; }
 
+.overlay-gallery_controls {
+  position: relative;
+  margin: auto; }
 
+.overlay-gallery_control {
+  display: inline-block;
+  width: 30px;
+  height: 46px;
+  vertical-align: middle;
+  background: url("../img/arrows-sprite.png") no-repeat;
+  cursor: pointer; }
 
+.overlay-gallery_control-right {
+  background-position: -30px 0; }
 
+.overlay-gallery_preview {
+  position: relative;
+  display: inline-block;
+  width: 70vh;
+  height: 70vh;
+  vertical-align: middle;
+  font-size: 0; }
+
+.overlay-gallery_preview-number {
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.invisible {
+  display: none;
+}

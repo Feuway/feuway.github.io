@@ -1,78 +1,90 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Jason Wood</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/onepage-scroll.css">
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li><a class="main-nav__list-item" href="#section-1">Home</a></li>
-                <li><a class="main-nav__list-item" href="#section-2">About me</a></li>
-                <li><a class="main-nav__list-item" href="#section-3">Portfolio</a></li>
-                <li><a class="main-nav__list-item" href="#section-4">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li><a href="#" class="main-nav__list-item" data-index='1'>home</a></li>
+            <li><a href="#" class="main-nav__list-item" data-index='2'>about me</a></li>
+            <li><a href="#" class="main-nav__list-item" data-index='3'>portfolio</a></li>
+            <li><a href="#" class="main-nav__list-item" data-index='4'>contact</a></li>
+        </ul>
+    </nav>
+</header>
     <main class="main">
-        <section class="section-1" id="section-1">
+        <section class="section-1">
             <div class="wrap">
                 <div class="logo">
                     <div class="logo__img">
-                        <img src="img/Logo.png" alt="wood" width="310" height="310">
+                        <img src="img/Logo.png" alt="woow" width="350" height="350">
                     </div>
                     <div class="logo__photograph">
-                        <h1 class="logo__photograph-desc logo__photograph-desc--bold">JWOOD</h1>
-                        <h1 class="logo__photograph-desc">PHOTOGRAPHY</h1>
+                        <h1 class="logo__photograph-desk logo__photograph-desk--bold">Jwood</h1>
+                        <h1 class="logo__photograph-desk">photography</h1>
                     </div>
                 </div>
                 <footer class="scroll">
-                    <p class="scroll__text">Scroll down to see more</p>
+                    <p class="scroll__text">scroll down to see more</p>
                     <div class="scroll__arrows"></div>
                 </footer>
             </div>
         </section>
-        <section class="section-2" id="section-2">
+        <section class="section-2">
             <div class="wrap">
                 <div class="photo"></div>
                 <div class="about-me">
                     <h2 class="about-me__title">About me</h2>
-                    <p class="about-me__text">There is actually not much to say about me. My name is Jason and I'm a photographer based in Bavaria/Germany. My passion is to photograph the beauty of landscapes worldwide. I love to travel and I also love to shoot close to my hometown. Bavaria is a wonderful place in the south of Germany and we have everything a landscape photographer could dream of. Mountains, waterfalls, rivers, forests and canyons are in my backyard. Everytime I come back from travelling to various foreign countries I again realize how much beauty I have around me. </p>
+                    <p class="about-me__text">There is actually not much to say about me. My name is Jason and I'm a photographer based in Bavaria/Germany. My passion is to photograph the beauty of landscapes worldwide. I love to travel and I also love to shoot close to my hometown. Bavaria is a wonderful place in the south of Germany and we have everything a landscape photographer could dream of. Mountains, waterfalls, rivers, forests and canyons are in my backyard. Everytime I come back from travelling to various foreign countries I again realize how much beauty I have around me.</p>
                     <div class="about-me__signature"></div>
                 </div>
                 <footer class="scroll">
-                    <p class="scroll__text">Scroll down to see more</p>
+                    <p class="scroll__text">scroll down to see more</p>
                     <div class="scroll__arrows"></div>
                 </footer>
             </div>
         </section>
-        <section class="section-3" id="section-3">
+        <section class="section-3">
             <div class="wrap">
                 <div class="portfolio">
                     <h2 class="portfolio__title">Portfolio</h2>
                     <div class="portfolio__gallery">
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--1"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--2"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--3"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--4"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--5"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--6"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--7"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--8"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--9"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--10"></div>
+                        <img src="img/1.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/2.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/3.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/4.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/5.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/6.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/7.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/8.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/9.jpg" alt="photo" class="portfolio__gallery-photo">
+                        <img src="img/10.jpg" alt="photo" class="portfolio__gallery-photo">
                     </div>
                 </div>
                 <footer class="scroll">
-                    <p class="scroll__text">Scroll down to see more</p>
+                    <p class="scroll__text">scroll down to see more</p>
                     <div class="scroll__arrows"></div>
                 </footer>
             </div>
+            <div class="overlay-gallery invisible">
+                <div class="overlay-gallery_controls">
+                    <span class="overlay-gallery_close">&times;</span>
+                    <div class="overlay-gallery_control overlay-gallery_control-left"></div>
+                    <div class="overlay-gallery_preview">
+                        <div class="overlay-gallery_preview-number">
+                            <span class="preview-number-current">0</span> из <span class="preview-number-total">0</span>
+                        </div>
+                    </div>
+                    <div class="overlay-gallery_control overlay-gallery_control-right"></div>
+                </div>
+            </div>
         </section>
-        <section class="section-4" id="section-4">
+        <section class="section-4">
             <div class="wrap">
                 <div class="contacts">
                     <h3 class="contacts__title">mail:</h3>
@@ -89,9 +101,8 @@
             </div>
         </section>
     </main>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.onepage-scroll.min.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
